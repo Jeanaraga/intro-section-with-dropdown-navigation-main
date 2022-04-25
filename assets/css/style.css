@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--Almost-White);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    height: 10vh;
+    margin: 0 auto;
+}
+
+.navs-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+}
+
+.navs .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.navs a {
+    color: var(--Medium-Gray);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 15%;
+}
+
+.login a {
+    color: var(--Medium-Gray);
+    text-decoration: none;
+}
+
+.login button {
+    color: var(--Medium-Gray);
+    font-size: 18px;
+    background-color: var(--Almost-White);
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+header a:hover{
+    color: var(--Almost-Black);
+}
+
+header button:hover {
+    color: var(--Almost-Black);
+    border: 2px solid var(--Almost-Black);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.drop {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-itens {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    list-style-type: none;
+    z-index: 1000;
+    position: absolute;
+    left: 10vw;
+    transform: translateY(80px);
+    color: var(--Almost-Black);
+    background-color: #fff;
+    box-shadow: 5px 5px 21px 1px #000;
+    border-radius: 5px;
+}
+
+.dropdown-itens.ativo {
+    display: flex;
+    transition: .5s;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(80px);
+	}
+}
+
+.cor {
+    color: green;
+}
