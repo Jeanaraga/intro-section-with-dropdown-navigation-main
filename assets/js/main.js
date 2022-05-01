@@ -78,8 +78,12 @@ menuHamburguer.addEventListener('click', function() {
     const navBar = document.querySelector('.navbar');
     const liPrincipal = document.querySelector('.li-principal');
     const imgHamburguer = document.querySelectorAll('.img-menu');
+    const header = document.querySelector('header');
+    const navMobile = document.querySelector('.mobile');
     navBar.classList.toggle('ativar');
     liPrincipal.classList.toggle('ativar');
+    header.classList.toggle('ativar');
+    navMobile.classList.toggle('ativar');
     imgHamburguer.forEach((item) => {
         if(item.getAttribute('src') === "./assets/images/icon-menu.svg") {
             item.setAttribute('src', "./assets/images/icon-close-menu.svg")
