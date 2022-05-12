@@ -259,7 +259,6 @@ main {
     justify-content: space-between;
     position: relative;
     top: 15vh;
-    border: 1px solid red;
 }
 
 .principal-main {
@@ -269,7 +268,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid green;
 }
 
 .escrito-main {
@@ -279,7 +277,6 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    border: 1px solid blue;
 }
 
 .escrito-main h1 {
@@ -323,7 +320,6 @@ main {
     align-items: center;
     justify-content: space-around;
     width: 90%;
-    border: 1px solid gold;
 }
 
 
